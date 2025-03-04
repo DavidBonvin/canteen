@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+      <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
+      <li><a [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a></li>
+      <li><a [routerLink]="['/register']" routerLinkActive="router-link-active">Register</a></li>
+      <li><a [routerLink]="['/user']" routerLinkActive="router-link-active">Dashboard User</a></li>
+      <li><a [routerLink]="['/admin']" routerLinkActive="router-link-active">Dashboard Admin</a></li>
+
+
+<!--    <li><a [routerLink]="['/admin/shoes']" routerLinkActive="router-link-active" >Liste Chaussures</a></li>-->
+<!--    <li><a [routerLink]="['/admin/shoes/1']">Première chaussure</a></li>-->
+<!--    <li><a [routerLink]="['/register']">Register</a></li>-->
+  </ul>
+  <button (click)="logout()">Déconnexion</button>
+</nav>

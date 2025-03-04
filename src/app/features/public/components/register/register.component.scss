@@ -1,0 +1,118 @@
+// Variables
+$background-color: #f0f0f0;
+$header-background-color: #3f51b5;
+$header-color: white;
+$input-border-color: #ccc;
+$input-border-radius: 5px;
+$input-padding: 5px;
+$create-button-background-color: #ff9800;
+$create-button-color: white;
+$cancel-button-background-color: #184e5c;
+$form-max-width-mobile: 400px;
+$form-max-width-tablet: 600px;
+$form-max-width-desktop: 800px;
+$form-margin-top: 20px;
+$form-padding: 0 10px;
+$form-group-margin-bottom: 15px;
+$label-margin-bottom: 5px;
+$label-font-weight: bold;
+$icon-placeholder-width: 24px;
+$icon-placeholder-height: 24px;
+$icon-placeholder-margin-right: 10px;
+$input-padding: 8px;
+$actions-margin-top: 20px;
+$actions-padding-bottom: 20px;
+$button-padding: 10px 20px;
+$button-border-radius: 5px;
+
+.register-container {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $background-color;
+
+  .register-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $header-background-color;
+    color: $header-color;
+  }
+
+  .register-form {
+    width: 90%;
+    max-width: $form-max-width-mobile;
+    margin-top: $form-margin-top;
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: $form-padding;
+
+    .form-group {
+      margin-bottom: $form-group-margin-bottom;
+
+      label {
+        display: block;
+        margin-bottom: $label-margin-bottom;
+        font-weight: $label-font-weight;
+      }
+
+      .input-wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+        padding: $input-padding;
+
+        .icon-placeholder {
+          width: $icon-placeholder-width;
+          height: $icon-placeholder-height;
+          margin-right: $icon-placeholder-margin-right;
+        }
+
+        input, select {
+          flex-grow: 1;
+          border: none;
+          outline: none;
+          padding: $input-padding;
+        }
+      }
+    }
+
+    .register-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: $actions-margin-top;
+      padding-bottom: $actions-padding-bottom;
+
+      button {
+        padding: $button-padding;
+        border: none;
+        border-radius: $button-border-radius;
+        cursor: pointer;
+      }
+
+      .create-button {
+        background-color: $create-button-background-color;
+        color: $create-button-color;
+      }
+
+      .cancel-button {
+        background-color: $cancel-button-background-color;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .register-form {
+      max-width: $form-max-width-tablet;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .register-form {
+      max-width: $form-max-width-desktop;
+    }
+  }
+}

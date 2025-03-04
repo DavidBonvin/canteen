@@ -1,0 +1,99 @@
+<div class="register-container">
+    <div class="register-header">
+        <h2>Register</h2>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="register-form">
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="address" formControlName="address" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="wallet">Wallet:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="wallet" formControlName="wallet" type="number" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="postalCode">Postal Code:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="postalCode" formControlName="postalCode" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="email" formControlName="email" type="email" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="password" formControlName="password" type="password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="name" formControlName="name" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="firstname" formControlName="firstname" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="phone" formControlName="phone" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="town">Town:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="town" formControlName="town" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <select id="sex" formControlName="sex">
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                    <option value="2">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="imagePath">Image Path:</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="imagePath" formControlName="imagePath" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="image64">Image (Base64):</label>
+            <div class="input-wrapper">
+                <div class="icon-placeholder"></div>
+                <input id="image64" formControlName="image64" type="text" />
+            </div>
+        </div>
+        <div class="register-actions">
+            <button type="submit" class="create-button">Create Account</button>
+            <button type="button" class="cancel-button">Cancel</button>
+        </div>
+    </form>
+</div>

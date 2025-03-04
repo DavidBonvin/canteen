@@ -1,15 +1,3 @@
-// Definición de variables
-$header-height: 80px;
-$footer-height: 60px;
-$header-bg-color: #2b8291;
-$footer-bg-color: #3394aa;
-$icon-color: white;
-$desktop-padding: 10%;
-
-* {
-  box-sizing: border-box;
-}
-
 .template-container {
   margin: 0;
   display: flex;
@@ -20,8 +8,8 @@ $desktop-padding: 10%;
 }
 
 .template-header {
-  background-color: $header-bg-color;
-  height: $header-height; // Altura fija para el header
+  background-color: red;
+  height: 80px; // Altura fija para el header (ajusta según necesites)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,8 +21,8 @@ $desktop-padding: 10%;
 }
 
 .template-footer {
-  background-color: $footer-bg-color;
-  height: $footer-height; // Altura fija para el footer
+  background-color: blue;
+  height: 60px; // Altura fija para el footer (ajusta según necesites)
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +33,7 @@ $desktop-padding: 10%;
     width: 100%;
 
     .icon {
-      color: $icon-color; // Color de los iconos
+      color: white; // Color de los iconos (puedes ajustarlo)
     }
   }
 }
@@ -53,6 +41,6 @@ $desktop-padding: 10%;
 /* Estilos para desktop */
 @media (min-width: 1200px) {
   .template-container {
-    padding: 0 $desktop-padding; // Margen lateral para centrar el contenido
+    padding: 0 10%; // Margen lateral para centrar el contenido
   }
 }
